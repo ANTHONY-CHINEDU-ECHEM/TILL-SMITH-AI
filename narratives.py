@@ -11,7 +11,10 @@ from .vocab import EFFICACY_MAP, FIXES, INCIDENTS, efficacy_tier
 
 
 def _lower_first(text):
-    return text[:1].lower() + text[1:] if text else text
+    """Lowercase the first letter unless the text starts with an acronym such as CDN or ERP."""
+    if not text or (len(text) > 1 and text[1].isupper()):
+        return text
+    return text[:1].lower() + text[1:]
 
 
 def _context(r, rng):

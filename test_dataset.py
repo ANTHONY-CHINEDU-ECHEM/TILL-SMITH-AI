@@ -35,6 +35,11 @@ class DatasetTests(unittest.TestCase):
         numeric = self.frame.select_dtypes("number")
         self.assertTrue((numeric >= 0).all().all())
 
+    def test_acronyms_keep_their_case(self):
+        text = " ".join(self.frame["incident_summary"]) + " " + " ".join(self.frame["lessons_learned"])
+        broken = [w for w in text.split() if len(w) > 2 and w[0].islower() and w[1:3].isupper()]
+        self.assertEqual(broken, [])
+
     def test_internal_consistency(self):
         f = self.frame
         ratio = f["incident_conversion_rate_pct"] / f["baseline_conversion_rate_pct"]
