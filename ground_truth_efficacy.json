@@ -1,0 +1,192 @@
+{
+  "tiers": {
+    "strong": 0.85,
+    "moderate": 0.55,
+    "neutral": 0.25,
+    "harmful": 0.08
+  },
+  "incidents": {
+    "Checkout failure": {
+      "strong": [
+        "Rollback of the latest checkout change",
+        "Incident runbook with synthetic monitoring"
+      ],
+      "moderate": [
+        "Checkout simplification with guest checkout",
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Sitewide discount campaign",
+        "Paid media spend increase"
+      ]
+    },
+    "Payment decline spike": {
+      "strong": [
+        "Payment gateway failover and smart routing",
+        "Fraud rule recalibration"
+      ],
+      "moderate": [
+        "Incident runbook with synthetic monitoring"
+      ],
+      "harmful": [
+        "Sitewide discount campaign"
+      ]
+    },
+    "Site speed degradation": {
+      "strong": [
+        "Third party script audit and deferral",
+        "Image optimisation and CDN tuning"
+      ],
+      "moderate": [
+        "Incident runbook with synthetic monitoring"
+      ],
+      "harmful": [
+        "Paid media spend increase"
+      ]
+    },
+    "Mobile experience regression": {
+      "strong": [
+        "Mobile regression testing and layout fix",
+        "Rollback of the latest checkout change"
+      ],
+      "moderate": [
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Paid media spend increase",
+        "Sitewide discount campaign"
+      ]
+    },
+    "Onsite search failure": {
+      "strong": [
+        "Search synonym and relevance tuning"
+      ],
+      "moderate": [
+        "Product content enrichment programme",
+        "Inventory reconciliation and sync monitoring"
+      ],
+      "harmful": [
+        "Paid media spend increase"
+      ]
+    },
+    "Inventory sync failure": {
+      "strong": [
+        "Inventory reconciliation and sync monitoring"
+      ],
+      "moderate": [
+        "Incident runbook with synthetic monitoring",
+        "App vendor escalation and version pinning"
+      ],
+      "harmful": [
+        "Sitewide discount campaign"
+      ]
+    },
+    "Pricing or promotion error": {
+      "strong": [
+        "Automated price and promotion guardrails"
+      ],
+      "moderate": [
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Sitewide discount campaign"
+      ]
+    },
+    "Shipping cost shock": {
+      "strong": [
+        "Shipping cost transparency and threshold redesign"
+      ],
+      "moderate": [
+        "Checkout simplification with guest checkout",
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Paid media spend increase"
+      ]
+    },
+    "Paid traffic quality drop": {
+      "strong": [
+        "Bot filtering and campaign retargeting"
+      ],
+      "moderate": [
+        "Tracking audit and server side tagging",
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Paid media spend increase",
+        "Sitewide discount campaign"
+      ]
+    },
+    "Analytics tracking break": {
+      "strong": [
+        "Tracking audit and server side tagging"
+      ],
+      "moderate": [
+        "Incident runbook with synthetic monitoring"
+      ],
+      "harmful": [
+        "Sitewide discount campaign",
+        "Paid media spend increase"
+      ]
+    },
+    "Product content gaps": {
+      "strong": [
+        "Product content enrichment programme"
+      ],
+      "moderate": [
+        "Review widget restoration and review response programme",
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Sitewide discount campaign"
+      ]
+    },
+    "Trust and reviews deficit": {
+      "strong": [
+        "Review widget restoration and review response programme"
+      ],
+      "moderate": [
+        "Product content enrichment programme",
+        "Shipping cost transparency and threshold redesign"
+      ],
+      "harmful": [
+        "Sitewide discount campaign",
+        "Paid media spend increase"
+      ]
+    },
+    "Platform or app outage": {
+      "strong": [
+        "App vendor escalation and version pinning",
+        "Incident runbook with synthetic monitoring"
+      ],
+      "moderate": [
+        "Rollback of the latest checkout change"
+      ],
+      "harmful": [
+        "Paid media spend increase"
+      ]
+    },
+    "Organic visibility loss": {
+      "strong": [
+        "Redirect map repair and technical SEO fix"
+      ],
+      "moderate": [
+        "Product content enrichment programme"
+      ],
+      "harmful": [
+        "Paid media spend increase"
+      ]
+    },
+    "Email and CRM revenue drop": {
+      "strong": [
+        "CRM flow repair and list hygiene"
+      ],
+      "moderate": [
+        "Controlled experiment before full rollout"
+      ],
+      "harmful": [
+        "Sitewide discount campaign"
+      ]
+    }
+  }
+}

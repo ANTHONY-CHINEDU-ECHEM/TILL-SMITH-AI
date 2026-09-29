@@ -1,0 +1,100 @@
+{
+  "queries": 400,
+  "seed": 2026,
+  "dataset_incidents": 16000,
+  "retrieval": {
+    "bm25": {
+      "precision_at_10": 0.8247,
+      "mrr": 0.8497,
+      "ndcg_at_10": 0.8725,
+      "p50_ms": 0.689
+    },
+    "dense": {
+      "precision_at_10": 0.8363,
+      "mrr": 0.8782,
+      "ndcg_at_10": 0.8887,
+      "p50_ms": 0.998
+    },
+    "fusion": {
+      "precision_at_10": 0.8488,
+      "mrr": 0.8873,
+      "ndcg_at_10": 0.8978,
+      "p50_ms": 1.428
+    },
+    "hybrid": {
+      "precision_at_10": 0.9563,
+      "mrr": 0.9773,
+      "ndcg_at_10": 0.9746,
+      "p50_ms": 1.359
+    }
+  },
+  "diagnosis": {
+    "top1_accuracy": 0.975,
+    "incident_recall": 0.9137
+  },
+  "recommendation": {
+    "tillsmith_top1_strong_rate": 0.9749,
+    "tillsmith_top1_strong_or_moderate_rate": 0.9749,
+    "tillsmith_harmful_in_recommendations_rate": 0.0,
+    "avoid_list_precision": 0.9227,
+    "naive_majority_vote_strong_rate": 0.6144,
+    "naive_success_vote_strong_rate": 0.7524
+  },
+  "grounding": {
+    "verified_answer_rate": 1.0,
+    "mean_citation_precision": 1.0
+  },
+  "latency_ms": {
+    "p50": 6.58,
+    "p95": 11.4,
+    "p99": 16.71,
+    "mean": 6.8
+  },
+  "holdout": {
+    "queries": 30,
+    "retrieval": {
+      "precision_at_10": 0.93,
+      "mrr": 0.9333,
+      "ndcg_at_10": 0.9328,
+      "p50_ms": 1.293
+    },
+    "diagnosis": {
+      "top1_accuracy": 0.9333,
+      "incident_recall": 0.9333
+    },
+    "recommendation": {
+      "tillsmith_top1_strong_rate": 0.9333,
+      "tillsmith_top1_strong_or_moderate_rate": 0.9333,
+      "tillsmith_harmful_in_recommendations_rate": 0.0,
+      "avoid_list_precision": 0.9286,
+      "naive_majority_vote_strong_rate": 0.6,
+      "naive_success_vote_strong_rate": 0.7
+    }
+  },
+  "risk_models": {
+    "revenue_loss_over_five_days": {
+      "test_auc": 0.657,
+      "base_rate": 0.328
+    },
+    "detection_over_24_hours": {
+      "test_auc": 0.81,
+      "base_rate": 0.256
+    },
+    "repeat_within_90_days": {
+      "test_auc": 0.616,
+      "base_rate": 0.283
+    },
+    "incident_classifier": {
+      "top1_accuracy": 0.133,
+      "top3_accuracy": 0.322,
+      "chance_top1": 0.067
+    }
+  },
+  "examples": [
+    "We run a beauty and personal care store on WooCommerce and traffic looks great but it seems to be bots.",
+    "Help: our sale prices did not switch off and margins are gone.",
+    "We run a pet supplies store on Magento and analytics says sales dropped but the bank and order system disagree.",
+    "People are getting an error on the final step when they try to buy and free traffic from search engines has halved on our Custom Headless site. How do we fix it?",
+    "Help: we noticed the abandoned basket emails stopped sending."
+  ]
+}
